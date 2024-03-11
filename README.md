@@ -17,7 +17,8 @@ Here I will show examples of everything that I know: 📢📢📢
         ✍️ Request & Error Handaling.
         ✍️ Cache
         ✍️ Query Optimization. 
-        ✍️ Security (Breeze). 
-        ✍️ guzzlehttp
+        ✍️ Security (Breeze).
+        ✍️ Multi-languages.(localization)
+        ✍️ GuzzleHttp
         ✍️ Accessor-Mutators
         ✍️ Livewire
