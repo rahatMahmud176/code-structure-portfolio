@@ -22,4 +22,29 @@ Here I will show examples of everything that I know: 📢📢📢
         ✍️ GuzzleHttp
         ✍️ Accessor-Mutators
         ✍️ Livewire
-# Alright, let's get started. 🎉
+## Alright, let's get started. 🎉
+
+🟢Example: Role & Permissions Management (Gates), Custom Middleware <br>
+
+##### Open the file: /App/Http/Middleware/AuthGateMiddleware; (note: this is my custom middleware)
+
+                 Gate::define($permission->slug, function(User $user) use ($permission){
+                    return $user->hasPermission($permission->slug);
+                });
+this function where I define all gates for role permissions; 
+
+##### Then, Open the file: /App/Http/Controller/RoleController;
+      
+    public function index()
+    {
+        Gate::authorize('role.index');
+        $roles = $this->role->all();
+        return view('backend.role.index', compact('roles'));
+    }
+in here, I verify permission by using "Gate::authorize" function;
+
+🟢Example:  Repository Design Pattern, child-class, Inheritance, implements, constructor and destructor function.
+    
+
+🟢Example: Email Sending, Event-Listener:
+
